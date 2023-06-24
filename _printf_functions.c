@@ -76,7 +76,7 @@ int print_number(va_list list)
 	{
 		_putchar('-');
 		len++;
-		num = n * -1;
+		num = -n;
 	}
 	else
 	{
