@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
 * struct cases - Cases to be considered for format specifiers
