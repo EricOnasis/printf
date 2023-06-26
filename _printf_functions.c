@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <unistd.h>
 
 /**
  * print_char - Handles %c format specifier
@@ -84,6 +85,17 @@ int print_number(va_list list)
 	}
 	len += conv_num(num, 10, "0123456789");
 	return (len);
+}
+
+/**
+ * _putchar - Print char by char.
+ * @c: brings value to print
+ * Return: Integr result of write function.
+ */
+
+int _putchar(char c)
+{
+        return (write(1, &c, 1));
 }
 
 
