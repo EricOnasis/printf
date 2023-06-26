@@ -26,8 +26,9 @@ int _printf(const char *format, ...)
 			_putchar(format[pos]);
 			len++;
 		}
-		else if (format[pos] == 'c' || format[pos] == 's' ||
-		format[pos] == 'd' || format[pos] == 'i' || format[pos] == 'b')
+		else if (format[pos] == 'c' || format[pos] == 's' || format[pos] == 'd'	||
+		format[pos] == 'i' || format[pos] == 'b' || format[pos] == 'u'
+		|| format[pos] == 'o' || format[pos] == 'x' || format[pos] == 'X')
 		{
 			len += (*case_selector(&format[pos]))(list);
 		}

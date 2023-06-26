@@ -1,12 +1,22 @@
+#include <stdio.h>
 #include "main.h"
 
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
 int main(void)
 {
-    _printf("%b\n", 98);
-    return (0);
+    int len;
+
+    len = _printf("Unsigned Decimal: %u\n", 12345);
+    printf("Length: %d\n\n", len);
+
+    len = _printf("Octal: %o\n", 12345);
+    printf("Length: %d\n\n", len);
+
+    len = _printf("Lowercase Hexadecimal: %x\n", 12345);
+    printf("Length: %d\n\n", len);
+
+    len = _printf("Uppercase Hexadecimal: %X\n", 12345);
+    printf("Length: %d\n\n", len);
+
+    return 0;
 }
+

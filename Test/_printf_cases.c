@@ -15,6 +15,10 @@ int (*case_selector(const char *format))(va_list list)
 		{"d", print_number},
 		{"i", print_number},
 		{"b", print_binary},
+		{"u", print_unsigned},
+		{"o", print_octal},
+		{"x", print_hex},
+		{"X", print_hex_uppercase},
 		{NULL, NULL}
 	};
 

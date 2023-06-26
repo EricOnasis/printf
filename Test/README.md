@@ -203,14 +203,4 @@ Handle the following conversion specifiers:
 
 -   GitHub repository: `printf`
 
-### 2\. Just because it's in print doesn't mean it's the gospel
-
-mandatory
-
-Create a man page for your function.
-
-**Repo:**
-
--   GitHub repository: `printf`
--   File: `man_3_printf`
-
+### 2\. With a face like mine, I do better in print

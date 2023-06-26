@@ -203,5 +203,4 @@ Handle the following conversion specifiers:
 
 -   GitHub repository: `printf`
 
-### 2\. With a face like mine, I do better in print 
-
+### 2\. With a face like mine, I do better in print
