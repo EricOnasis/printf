@@ -19,34 +19,32 @@ int _printf(const char *format, ...)
 	{
 		if (format[pos] == '%')
 		{
-			pos++;
+		pos++;
 
-			if (format[pos] == '%')
-			{
-				_putchar(format[pos]);
-				len++;
-			}
-
-			if (format[pos] == 'c' || format[pos] == 's'
-					|| format[pos] == 'd' || format[pos] == 'i')
-				len = len + (*case_selector(&format[pos]))(list);
-
-			else if (format[pos] != '%')
-			{
-				_putchar('%');
-				_putchar(format[pos]);
-				len = len + 2;
-			}
-		}
-		else
+		if (format[pos] == '%')
 		{
 			_putchar(format[pos]);
 			len++;
 		}
-		pos++;
+		else if (format[pos] == 'c' || format[pos] == 's' ||
+		format[pos] == 'd' || format[pos] == 'i' || format[pos] == 'b')
+		{
+			len += (*case_selector(&format[pos]))(list);
+		}
+		else if (format[pos] != '%')
+		{
+			_putchar('%');
+			_putchar(format[pos]);
+			len += 2;
+		}
+		}
+		else
+		{
+		_putchar(format[pos]);
+		len++;
+		}
+	pos++;
 	}
 	va_end(list);
 	return (len);
 }
-
-

@@ -14,6 +14,7 @@ int (*case_selector(const char *format))(va_list list)
 		{"s", print_str},
 		{"d", print_number},
 		{"i", print_number},
+		{"b", print_binary},
 		{NULL, NULL}
 	};
 
