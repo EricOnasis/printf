@@ -21,6 +21,8 @@ int print_char(va_list list);
 int print_str(va_list list);
 int print_number(va_list list);
 int (*case_selector(const char *format))(va_list list);
+int print_binary(va_list list);
+int conv_num(unsigned int n, unsigned int base, char *numbers);
 
 #endif
 
