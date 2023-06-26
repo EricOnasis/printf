@@ -11,16 +11,13 @@ int _printf(const char *format, ...)
 	int pos = 0, len = 0;
 
 	va_start(list, format);
-
 	if (format == NULL)
 		return (-1);
-
 	while (format && format[pos] != '\0')
 	{
 		if (format[pos] == '%')
 		{
 		pos++;
-
 		if (format[pos] == '%')
 		{
 			_putchar(format[pos]);
@@ -38,6 +35,8 @@ int _printf(const char *format, ...)
 			_putchar(format[pos]);
 			len += 2;
 		}
+		else if (format[pos] == '\0')
+			return (-1);
 		}
 		else
 		{

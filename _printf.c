@@ -18,7 +18,6 @@ int _printf(const char *format, ...)
 		if (format[pos] == '%')
 		{
 		pos++;
-
 		if (format[pos] == '%')
 		{
 			_putchar(format[pos]);
@@ -36,6 +35,8 @@ int _printf(const char *format, ...)
 			_putchar(format[pos]);
 			len += 2;
 		}
+		else if (format[pos] == '\0')
+			return (-1);
 		}
 		else
 		{
