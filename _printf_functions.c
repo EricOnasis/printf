@@ -3,9 +3,9 @@
 #include <unistd.h>
 
 /**
- * print_char - Handles %c format specifier
- * @list: The variadic arguments
- * Return: The int value
+ * print_char - Handles %c format specifier.
+ * @list: The variadic arguments.
+ * Return: The int value.
  */
 
 int print_char(va_list list)
@@ -17,9 +17,9 @@ int print_char(va_list list)
 }
 
 /**
-* print_str - Handles %s format specifier
-* @list: The variadic arguments
-* Return: The int value
+* print_str - Handles %s format specifier.
+* @list: The variadic arguments.
+* Return: The int value.
 */
 
 int print_str(va_list list)
@@ -62,7 +62,7 @@ int conv_num(unsigned int n, unsigned int base, char *numbers)
 }
 
 /**
-* print_number - Handles %d format specifier
+* print_number - Handles %d format specifier.
 * @list: The variadic arguments.
 * Return: The length of the number.
 */
