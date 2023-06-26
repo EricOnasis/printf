@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-* _printf - Prints formatted output
-* @format: A pointer to the string to analyze
-* Return: Integer
+* _printf - Prints formatted output.
+* @format: A pointer to the string to analyze.
+* Return: Integer.
 */
 int _printf(const char *format, ...)
 {
