@@ -5,8 +5,8 @@
 #include <stdio.h>
 
 /**
-* struct cases - Cases to be considered for format specifiers
-* @c: The operator to be used
+* struct cases - Cases to be considered for format specifiers.
+* @c: The operator to be used for the struct
 * @f: The function to be called depending on selected case
 */
 
